@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+
+    <img src="사진.jpg"/> <br/>
+    <audio src="음악.mp3" controls autoplay ></audio> <br/>
+    <video src="영상.mp4" controls autoplay ></video> <br/>
+
+    <audio controls>
+        <source src="음악.mp3"/>
+        <source src="음악.mp3"/>
+        <source src="음악.mp3"/>
+    </audio> <br/>
+
+    <video src="영상.mp4" controls muted autoplay width="500px" height="500"></video>
+
+
+
+    <!--
+        audio 태그 속성
+         src : 오디오파일 경로
+         controls : 음악재생 도구 출력
+         autoplay : 자동실행 [최근 브라우저 정책상 금지 단)소리끄면 가능]
+         muted : 음소거[자동실행 시 음소거에 사용]
+         loop : 반복재생
+         width : 가로사이즈
+         height : 세로사이즈
+    -->
+    
+    <!--
+        1. 동영상 퍼가기 : 유튜브에서 퍼가기
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-cieu5pE0bs?si=GG93J3LP0FCQX5FL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        2. 지도 퍼가기
+
+    -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-cieu5pE0bs?si=GG93J3LP0FCQX5FL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3899944870145!2d126.8511945764216!3d37.309588738819414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f26eca4e801%3A0xcc760a7a473e93bf!2z7ZWc64yA7JWe7Jet!5e0!3m2!1sko!2skr!4v1707221383736!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br/>
+
+
+
+<!--
+    웹페이지
+    (뼈) HTML : 하이퍼 텍스트 마크업 언어
+    (옷) CSS : 캐스케이드 스타일 시트
+        cascade(구조적) style(스타일) sheets(씌운다.)
+            - HTML에 구조적 디자인 입히기.
+    (행위) Javascript : 프로그래밍 언어
+            - HTML에 동적인 이벤트 입히기
+    
+    1. (일회성) CSS적용하는 방법
+        <head> ~ </head> 사이에 <style> css코드 작성 </style>
+    2. (일회성) 마크업에 style 속성 이용 방법
+        <마크업 style="css코드작성"</마크업>
+        - HTML.CSS 코드 구분 힘듬
+        - CSS코드는 해당 HTML에서만 사용가능.
+    
+    3. (*재사용) CSS파일에 css코드를 작성해서 HTML파일에 호출하는 방법
+        1. CSS파일을 만든다.
+        2. 만든 CSS파일에 css코드 작성한다.
+        3. HTML파일내 <head> ~ </head> 사이에 CSS파일을 호출한다.
+        <link rel="stylesheet" href="호출할css파일명" />
+-->
+
+    안녕하세요
+<link rel="stylesheet" href="4_CSS.CSS"/>
+
+
+</body>
+</html>
