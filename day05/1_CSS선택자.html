@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--외부 CSS파일 호출
+        - 속성이 겹쳤을 때 우선 순위
+         * > 마크업 > class > id 순으로 반영
+    
+    -->
+    <link rel='stylesheet' 
+        type='text/css' 
+        media='screen' 
+        href='CSS선택자.css'>
+
+</head>
+<body>
+
+    body 구역
+    <h1> h1 구역 </h1>
+    <h1 class="box1"> h1 구역 </h1>
+    <h1 class="box1 box2"> h1 구역 </h1>
+    <h1 class="box1" id="box3"> h1 구역 </h1>
+
+    <h2> h2 구역 </h2>
+
+    <!-- div(Division) 마크업 : 구역/박스 나눌때 사용-->
+    <!-- 주로 부모 마크업(레이아웃) : div, span 마크업 사용됨 -->
+    <div id="box5"> <!-- 할머니 -->
+        <div> <!-- 부모 -->
+            div구역 안에 있는 h1 구역
+            <div> <!-- 손자 -->
+                div 구역 안에 h1 구역 안에 p 구역 
+            </div>
+        </div>
+
+        <div> 
+            div구역 안에 있는 h3 구역 
+            <div> 
+                div 구역 안에 h3 구역 안에 p 구역 
+            </div>
+        </div>
+    </div>
+
+    <div id="box6">
+        여기는 box6
+    </div>
+    
+</body>
+</html>
+<!-- 
+                HTML
+    HEAD                    BODY
+-->
