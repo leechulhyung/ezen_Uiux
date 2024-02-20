@@ -1,0 +1,86 @@
+*{ /* * : 와일드카드 : 전체구역 */
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+#wrap{}
+
+#header{
+    
+    /* 내가 가로배치할 대상의 부모한테 flex 요소 적용 */
+    display: flex; /* flex : 자식 요소들을 배치하는 방법 : 가로배치 */ 
+    justify-content: space-between;/* flex 사용시 자식 요소들의 배치 정렬하는 방법 */
+    
+    width: 1280px;
+    margin: 30px auto;
+}
+
+#left_header
+#left_header > img {width: 80px; }
+
+#right_header{}
+#top_menu{
+    display: flex; /* 자식 요소들(li 3개)을 가로 배치 */
+    justify-content: flex-end;
+    font-size: 10px;
+}
+#top_menu > li{
+    margin-left: 10px;
+}
+#main_menu > li{
+    margin-left: 60px;
+}
+
+#main_menu{
+    display: flex; /* 자식 요소들(li 5개)을 가로 배치 */
+    font-size: 20px;
+    font-weight: bold;
+}
+#main_bg{
+    width: 100%
+}
+#content{
+    background-color: beige;
+    display: flex;
+    margin: 10px;
+
+    width: 1280px;
+    margin: 50px auto;
+}
+#side_bar{ 
+    width: 240px;
+}
+#side_bar > h3{
+    background-color: grey;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+}
+#side_bar li{
+    padding: 12px;
+    border-bottom: 1px solid #eeeeee; /* 색상코드 #eeeeee : 밝은 회색 : 헥사 코드 */
+    
+}
+#main_content{
+    width: 1040px;
+    margin-left: 20px;
+}
+#main_content h3{
+    font-size: 20px;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#first{
+    font-family: 궁서;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+#footer{
+    background-color: aqua;
+}
